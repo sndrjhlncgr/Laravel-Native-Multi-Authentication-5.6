@@ -13,10 +13,11 @@ A Simple Native Laravel Package for handling multiple authentication **EASY!!**
 
 ## Features
 
-|       Forgot password       |
-|-----------------------------|
-|:heavy_check_mark: Subscriber|
-
+|            Forgot password           |
+|--------------------------------------|
+|:heavy_check_mark: Subscriber         |
+|:heavy_check_mark: Administrator      |
+|:heavy_check_mark: Super Administrator|
 
 * Forgot password =>
     :heavy_check_mark: Subscriber
