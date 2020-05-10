@@ -116,6 +116,12 @@ php artisan tinker
 **Error:** Object not found! when click reset password in email.<br>
 **Solution:** if you're using `php artisan serve` you need to change the `APP_URL` value from http://localhost to http://127.0.0.1:8000/ in the env file.
 
+**Error:** Trying to access array offset on value of type null.<br>
+**Solution:** try to update composer by this command: `composer update`
+
+**Error:** “The page has expired due to inactivity”.<br>
+**Solution:** if youre using php artisan serve you need to change in env file the APP_URL from http://localhost to http://127.0.0.1:8000/
+
 
 ### License
 
