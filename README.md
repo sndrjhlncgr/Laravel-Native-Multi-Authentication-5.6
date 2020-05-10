@@ -21,6 +21,9 @@ A Simple Native Laravel Package for handling multiple authentication **EASY!!**
     :heavy_check_mark: Subscriber
     :x: Administrator
     :x: Super Administrator
+* Change Password => 
+    :x: Subscriber
+    
 
 ## Compatibility
 
