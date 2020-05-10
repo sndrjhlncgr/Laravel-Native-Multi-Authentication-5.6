@@ -13,16 +13,11 @@ A Simple Native Laravel Package for handling multiple authentication **EASY!!**
 
 ## Features
 
-|            Forgot password           |  Account Verification Email   |
-|--------------------------------------|-------------------------------|
-|:heavy_check_mark: Subscriber         | :heavy_check_mark: Subscriber |
-|:heavy_check_mark: Administrator      |  :x: Administrator            |
-|:heavy_check_mark: Super Administrator| :x: Super Administrator       |
-
-* Change Password => 
-    :heavy_check_mark: Subscriber
-    :heavy_check_mark: Administrator
-    :heavy_check_mark: Super Administrator
+|            Forgot password           |  Account Verification Email  |            Change Password           |
+|--------------------------------------|------------------------------|--------------------------------------|
+|:heavy_check_mark: Subscriber         |:heavy_check_mark: Subscriber |:heavy_check_mark: Subscriber         |
+|:heavy_check_mark: Administrator      |:x: Administrator             |:heavy_check_mark: Administrator      |
+|:heavy_check_mark: Super Administrator|:x: Super Administrator       |:heavy_check_mark: Super Administrator|
 
 ## Compatibility
 
