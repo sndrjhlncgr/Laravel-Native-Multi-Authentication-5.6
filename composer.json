@@ -1,0 +1,26 @@
+{
+    "name": "sandrocagara/laravelmultiauth",
+    "description": "Native Laravel Multi-Authentication",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sandrocagara",
+            "email": "sandrocagaragithub@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sandrocagara\\Multiauth\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sandrocagara\\Multiauth\\AuthServiceProvider"
+            ]
+        }
+    }
+}
