@@ -113,9 +113,11 @@ Then after that you're ready to migrate.
 ```
 php artisan tinker
 ```
-**User** `factory(App\User::class, 5)->create();`<br>
-**Administrator** `factory(App\Admin::class, 5)->create();`<br>
-**Super Administrator** `factory(App\SuperAdmin::class, 5)->create();`
+**User:** `factory(App\User::class, 5)->create();`<br>
+**Administrator:** `factory(App\Admin::class, 5)->create();`<br>
+**Super Administrator:** `factory(App\SuperAdmin::class, 5)->create();`
+
+**Default Password:** `secret`
 
 
 ## Common Issue you may Encounter
