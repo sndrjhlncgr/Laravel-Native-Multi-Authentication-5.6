@@ -80,7 +80,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Multi Authentication
+                    Larave Multi Authentication
                 </div>
             </div>
         </div>
