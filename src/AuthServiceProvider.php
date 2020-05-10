@@ -22,6 +22,7 @@ class AuthServiceProvider extends ServiceProvider
             __DIR__.'/Models' => app_path('./'),
             __DIR__.'/Notifications' => app_path('/Notifications'),
             __DIR__.'/Providers' => app_path('/Providers'),
+            __DIR__.'/Mail' => app_path('/Mail'),
         ]);
     }
 
