@@ -57,17 +57,18 @@ class SuperAdminLoginController extends Controller
     public function login(Request $request)
     {
         $this->validate($request,[
-            'email' => 'required',
+            'username' => 'required',
             'password' => 'required',
         ]);
 
-        $super_admin = Auth::guard('super-admin')->attempt(
-            ['email' => $request->email,
-            'password' => $request->password],
+        $superAdmin = Auth::guard('super-admin')->attempt([
+            'username' => $request->username,
+            'password' => $request->password
+        ],
             $request->remember
         );
 
-        if($super_admin) {
+        if($superAdmin) {
             return redirect()->intended(route('super-admin.home'));
         }
 

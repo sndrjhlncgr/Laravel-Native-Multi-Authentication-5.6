@@ -36,13 +36,14 @@ class AdminLoginController extends Controller
     public function login(Request $request)
     {
         $this->validate($request, [
-            'email'=> 'required|email',
+            'username'=> 'required',
             'password' => 'required',
         ]);
 
-        $admin = Auth::guard('admin')->attempt(
-            ['email' => $request->email,
-            'password' => $request->password], 
+        $admin = Auth::guard('admin')->attempt([
+            'username' => $request->username,
+            'password' => $request->password
+        ], 
             $request->remember
         );
 
