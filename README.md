@@ -22,9 +22,9 @@ A Simple Native Laravel Package for handling multiple authentication **EASY!!**
     :x: Administrator
     :x: Super Administrator
 * Change Password => 
-    :x: Subscriber
-    :x: Administrator
-    :x: Super Administrator
+    :heavy_check_mark: Subscriber
+    :heavy_check_mark: Administrator
+    :heavy_check_mark: Super Administrator
 
 ## Compatibility
 
@@ -57,16 +57,24 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
 Route::prefix('home')->group(function() {
     Route::get('/', 'HomeController@index')->name('home');
+
+    Route::get('/change-password','HomeController@showChangePasswordForm')->name('home.change-password.form');
+    Route::post('/change-password', 'HomeController@changePassword')->name('home.change-password.submit');
+
     Route::get('/logout', 'Auth\LoginController@userlogout')->name('home.logout');
 });
 
 Route::prefix('admin')->group(function() {
     Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login.form');
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+
     Route::get('/', 'AdminHomeController@index')->name('admin.home');
+
+    Route::get('/change-password','AdminHomeController@showChangePasswordForm')->name('admin.change-password.form');
+    Route::post('/change-password','AdminHomeController@changePassword')->name('admin.change-password.submit');
+
     Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 
     Route::post('/password/email', 'Auth\AdminForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
@@ -78,7 +86,12 @@ Route::prefix('admin')->group(function() {
 Route::prefix('super-admin')->group(function() {
     Route::get('/login', 'Auth\SuperAdminLoginController@showLoginForm')->name('super-admin.login.form');
     Route::post('/login', 'Auth\SuperAdminLoginController@login')->name('super-admin.login.submit');
+
     Route::get('/', 'SuperAdminHomeController@index')->name('super-admin.home');
+
+    Route::get('/change-password', 'SuperAdminHomeController@showChangePasswordForm')->name('super-admin.change-password.form');
+    Route::post('/change-password', 'SuperAdminHomeController@changePassword')->name('super-admin.change-password.submit');
+
     Route::get('/logout', 'Auth\SuperAdminLoginController@superAdminlogout')->name('super-admin.logout');
 
     Route::post('/password/email', 'Auth\SuperAdminForgotPasswordController@sendResetLinkEmail')->name('super-admin.password.email');
@@ -89,6 +102,10 @@ Route::prefix('super-admin')->group(function() {
 
 Route::prefix('account')->group(function() {
     Route::get('/user/verified/{token}', 'Auth\RegisterController@accountVerification');
+});
+
+Route::fallback(function(){
+    return back();
 });
 ```
 
