@@ -122,7 +122,6 @@ php artisan tinker
 
 ## Common Issue you may Encounter
 
----
 
 **Error:** Expected response code 250 but got code "530", with message "530 5.7.1 Authentication required".<br>
 **Solution:** You need to setup your mail driver. for more info [https://laravel.com/docs/5.6/mail]
