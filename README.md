@@ -106,7 +106,9 @@ Route::fallback(function(){
 
 Then after that you're ready to migrate.
 
-`php artisan migrate`
+```
+php artisan migrate
+```
 
 ## Generate Dummy accounts using `Laravel Tinker`
 
