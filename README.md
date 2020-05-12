@@ -122,18 +122,19 @@ php artisan tinker
 
 ## Common Issue you may Encounter
 
+---
 **Error:** Expected response code 250 but got code "530", with message "530 5.7.1 Authentication required".<br>
 **Solution:** You need to setup your mail driver. for more info [https://laravel.com/docs/5.6/mail]
-
+---
 **Error:** Object not found! when click reset password in email.<br>
 **Solution:** if you're using `php artisan serve` you need to change the `APP_URL` value from http://localhost to http://127.0.0.1:8000/ in the env file.
-
+---
 **Error:** Trying to access array offset on value of type null. this type of error cause of php version so maybe you can upgrade the php version in your composer.json<br>
 **Solution:** try to update composer by this command: `composer update`
-
+---
 **Error:** “The page has expired due to inactivity”.<br>
 **Solution:** if youre using php artisan serve you need to change in env file the APP_URL from http://localhost to http://127.0.0.1:8000/
-
+---
 
 ### License
 
