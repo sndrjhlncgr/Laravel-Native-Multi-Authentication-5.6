@@ -13,7 +13,7 @@
 
 Route::group(['namespace' => 'Sandrocagara\Multiauth\Http\Controllers'], function () {
    //Front Page
-    Route::get('/', function () {
+   Route::get('/', function () {
         return view('welcome');
     });
 
@@ -83,8 +83,8 @@ Route::group(['namespace' => 'Sandrocagara\Multiauth\Http\Controllers'], functio
         Route::get('/user/verified/{token}', 'Auth\RegisterController@accountVerification');
     });
 
-    //Error Message
+    //Error Message!
     Route::fallback(function(){
-        return back();
+        return back(); //!Error message';
     });
 });
