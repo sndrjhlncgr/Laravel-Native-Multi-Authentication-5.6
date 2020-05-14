@@ -1,16 +1,17 @@
 <?php
 
-namespace App\Mail;
+namespace App\Mail\Subscriber;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class UserEmailVerification extends Mailable
+class UserWelcomeEmail extends Mailable
 {
     use Queueable, SerializesModels;
     public $user;
+    
     /**
      * Create a new message instance.
      *
@@ -28,6 +29,6 @@ class UserEmailVerification extends Mailable
      */
     public function build()
     {
-        return $this->view('subscriber.email-verification.email');
+        return $this->view('subscriber.mails.welcome_email');
     }
 }
