@@ -10,6 +10,7 @@
 A Simple Native Laravel Package for handling multiple authentication **EASY!!**
 - **Laravel**: 5.6
 - **Author**: Sandro Cagara
+- **Package Version**: v1.0.7 stable
 
 ## Features
 
