@@ -10,7 +10,8 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use App\AccountVerification;
 use Mail;
-use App\Mail\UserEmailVerification;
+use App\Mail\Subscriber\UserEmailVerification;
+use App\Mail\Subscriber\UserWelcomeEmail;
 
 class RegisterController extends Controller
 {
@@ -79,6 +80,7 @@ class RegisterController extends Controller
         ]);
  
         Mail::to($user->email)->send(new UserEmailVerification($user));
+        Mail::to($user->email)->send(new UserWelcomeEmail($user));
  
         return $user;
     }
