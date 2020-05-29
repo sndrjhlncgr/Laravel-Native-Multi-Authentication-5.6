@@ -1,6 +1,6 @@
 {
     "name": "sandrocagara/laravelmultiauth",
-    "description": "Native Laravel Multi-Authentication",
+    "description": "Native Laravel Multi-Authentication (Subscriber, Administrator, Super Administrator).",
     "type": "library",
     "license": "MIT",
     "authors": [
