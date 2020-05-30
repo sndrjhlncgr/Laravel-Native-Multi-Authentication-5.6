@@ -1,10 +1,9 @@
-<p align="center">
 # Laravel Native Multi-Authentication
 [![Issue](https://img.shields.io/github/issues/sndrjhlncgr/Laravel-Native-Multi-Authentication-5.6)](https://packagist.org/packages/sandrocagara/laravelmultiauth)
 ![Forks](https://img.shields.io/github/forks/sndrjhlncgr/Laravel-Native-Multi-Authentication-5.6)
 [![Stars](https://img.shields.io/github/stars/sndrjhlncgr/Laravel-Native-Multi-Authentication-5.6)](https://packagist.org/packages/sandrocagara/laravelmultiauth)
 [![License](https://img.shields.io/github/license/sndrjhlncgr/Laravel-Native-Multi-Authentication-5.6)](https://packagist.org/packages/sandrocagara/laravelmultiauth)
-</p>
+
 ![Image of Sandro Cagara](https://i.ibb.co/WzjQLHV/68747470733a2f2f692e6962622e636f2f5a56516a3777592f647361646164732e706e67.jpg)
 
 A Simple Native Laravel Package for handling multiple authentication **EASY!!**
