@@ -115,7 +115,7 @@ php artisan migrate
 
 ## Config
 
-in `config/auth.php` the default expiration of reset password is `30mins` you can change it by updating this array.
+in `config/auth.php` the default expiration of reset password is `30mins`. you can change it by updating this array.
 
 ```
 'passwords' => [
