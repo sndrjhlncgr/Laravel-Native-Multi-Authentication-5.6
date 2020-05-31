@@ -119,24 +119,24 @@ in `config/auth.php` the default expiration of reset password is `30mins`. you c
 
 ```
 'passwords' => [
-        'users' => [
-            'provider' => 'users',
-            'table' => 'password_resets',
-            'expire' => 30, <-HERE
-        ],
+     'users' => [
+         'provider' => 'users',
+         'table' => 'password_resets',
+         'expire' => 30, <-HERE
+     ],
 
-        'admins' => [
-            'provider' => 'admins',
-            'table' => 'password_resets',
-            'expire' => 30, <-HERE
-        ],
+     'admins' => [
+         'provider' => 'admins',
+         'table' => 'password_resets',
+         'expire' => 30, <-HERE
+     ],
 
-        'super_admins' => [
-            'provider' => 'super_admins',
-            'table' => 'password_resets',
-            'expire' => 30, <-HERE
-        ],
-    ],
+     'super_admins' => [
+         'provider' => 'super_admins',
+         'table' => 'password_resets',
+         'expire' => 30, <-HERE
+     ],
+ ],
 ```
 
 ## Generate Dummy accounts using `Laravel Tinker`
