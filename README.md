@@ -45,7 +45,7 @@ $ php artisan vendor:publish --force
 
 ## Routes
 
-You need to paste this in your `routes/web.php`.
+You need to copy/paste this in your `routes/web.php`.
 
 ```
 Route::get('/', function () {
