@@ -176,4 +176,4 @@ php artisan tinker
 
 ## License
 
-MIT © [Sandro Cagara](https://github.com/sndrjhlncgr)
+MIT © 2020 [Sandro Cagara](https://github.com/sndrjhlncgr)
