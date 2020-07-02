@@ -1,4 +1,5 @@
 <h1 align="center">Laravel Native Multi Authentication</h1>
+<p align="center">A Simple Native Laravel Package for handling multiple authentication.</p>
 
 <p align="center">
    <a href="https://github.com/sndrjhlncgr/Laravel-Native-Multi-Authentication-5.6/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sndrjhlncgr/Laravel-Native-Multi-Authentication-5.6"></a>
@@ -8,8 +9,6 @@
 <p align="center">
 
 ![Image of Sandro Cagara](https://i.ibb.co/WzjQLHV/68747470733a2f2f692e6962622e636f2f5a56516a3777592f647361646164732e706e67.jpg)
-
-A Simple Native Laravel Package for handling multiple authentication **EASY!!**
 - **Laravel**: 5.6
 - **Author**: Sandro Cagara
 - **Package Version**: v1.0.8 stable
